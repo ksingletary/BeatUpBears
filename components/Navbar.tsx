@@ -35,8 +35,8 @@ export function Navbar() {
   };
 
   return (
-    <nav className="navbar bg-blackLight fixed top-0 left-0 h-full w-36 p-4">
-      <div className="flex flex-col items-start h-full relative">
+    <nav className="navbar bg-blackLighter fixed top-0 left-0 h-full w-36 p-4 bg-opacity-95 z-10 ">
+      <div className="flex flex-col items-start h-full relative  ">
         <div className="text-white font-bold">
           <Link href="/">
             <Image
@@ -44,13 +44,19 @@ export function Navbar() {
               alt="bublogo"
               width={200}
               height={200}
-              className=""
+              className="absolute"
             />
-          </Link>
+          </Link>         
+          <div className="flex ml-10 font-CaeciliaSemi text-3xl h-[62vh] w-8 justify-center overflow-hidden">
+            <div className="">
+              <h1 className="mt-80 self-center whitespace-nowrap -rotate-90">Beat Up Bears®</h1>
+            </div>
+          </div> 
         </div>
+        
 
         <button onClick={handleToggle} className="mt-auto text-white">
-          <FaBarsStaggered className="w-8 h-8 ml-6" />
+          <FaBarsStaggered className="w-8 h-8 ml-8" />
         </button>
 
         {(open || isAnimating) && (

@@ -39,6 +39,14 @@
     font-weight: bold;
   }
 
+  @layer components {
+    .primary-btn {
+      @apply h-12 w-40 mx-auto lg:ml-0 px-6 py-3 cursor-pointer 
+      font-apercuMedium bg-blackLight border-2 border-orange-600 hover:bg-gray-700 transform 
+      ease-in-out duration-300 text-center text-white rounded-lg;
+    }
+  }
+
   .background-image {
     position: relative;
     width: 100%;
@@ -94,6 +102,24 @@
     }
   }
   
+  /* 1.	@keyframes slideOutShrink:
+		This defines a new animation called slideOutShrink.
+	    	0%:
+    	This represents the starting state of the animation.
+    	transform: translateX(0):
+    	Keeps the element in its original position on the screen.
+    	scale(1):
+    	Maintains the element at its full size (100%).
+    	opacity: 1:
+    	Keeps the element fully opaque (visible).
+	    	100%:
+    	This represents the ending state of the animation.
+    	transform: translateX(-100%):
+    	Moves the element completely off-screen to the left.
+    	scale(0.8):
+    	Reduces the size of the element to 80% of its original size.
+    	opacity: 0:
+    	Makes the element fully transparent (invisible). */
   @keyframes slideOutShrink {
     0% {
       transform: translateX(0) scale(1);
