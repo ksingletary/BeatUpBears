@@ -14,7 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        cream: '#FFFDD0', // You can adjust the hex value to your preferred shade of cream
+        cream: '#FFFDD0', 
         blackLight: '#262626',
       },
       container : {
@@ -23,6 +23,14 @@ const config: Config = {
           DEFAULT: "1rem",
           sm: "3rem",
         }
+      },
+      fontFamily:{
+        apercuRegular: ['ApercuRegular'],
+        apercuMedium: ['ApercuMedium'],
+        apercuBold: ['Apercu'],
+        CaeciliaLight: ['CaeciliaLight'],
+        CaeciliaSemi: ['CaeciliaMedium'],
+        CaeciliaBold: ['CaeciliaBold']
       },
       boxShadow: {
         'strong': '0 4px 6px 4px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)'
