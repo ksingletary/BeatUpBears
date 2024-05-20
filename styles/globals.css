@@ -2,5 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@font-face {
+    font-family: "ApercuRegular";
+    src: url('../public/fonts/apercu-regular.ttf') format("truetype");
+    font-weight: lighter;
+  }
+  
+  @font-face {
+    font-family: "ApercuMedium";
+    src: url('../public/fonts/apercu-medium.ttf') format("truetype");
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: "Apercu";
+    src: url('../public/fonts/apercu-bold.ttf') format('truetype');
+    font-weight: bold;  /* Specify the font-weight this font face represents*/
+  }
+  
+  
+  @font-face {
+    font-family: "CaeciliaLight";
+    src: url('../public/fonts/CaeciliaComLight.ttf') format("truetype");
+    font-weight: lighter;
+  }
+  
+  @font-face {
+    font-family: "CaeciliaMedium";
+    src: url('../public/fonts/CaeciliaComSemi.ttf') format("truetype");
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: "CaeciliaBold";
+    src: url('../public/fonts/CaeciliaComBold.ttf') format("truetype");
+    font-weight: bold;
+  }
 
