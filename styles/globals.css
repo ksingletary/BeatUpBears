@@ -39,3 +39,76 @@
     font-weight: bold;
   }
 
+  .background-image {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none; /* No background image here */
+  }
+  
+  .background-image::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('../public/solanaSOL.png');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    background-position: center top;
+    filter: brightness(30%);
+    z-index: -1;
+  }
+
+  /* Navbar animations */
+  /* ========================== */
+
+  /* @keyframes slideInExpand:
+		This defines a new animation called slideInExpand.
+		0%:
+		-This represents the starting state of the animation.
+		transform: translateX(-100%):
+		-Moves the element completely off-screen to the left.
+		scale(0.8):
+		-Reduces the size of the element to 80% of its original size.
+		opacity: 0:
+		-Makes the element fully transparent (invisible).
+		100%:
+		-This represents the ending state of the animation.
+		transform: translateX(0):
+		-Moves the element to its original position on the screen.
+		scale(1):
+		-Restores the element to its full size (100%).
+		opacity: 1:
+		-Makes the element fully opaque (visible). */
+@keyframes slideInExpand {
+    0% {
+      transform: translateX(-100%) scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOutShrink {
+    0% {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%) scale(0.8);
+      opacity: 0;
+    }
+  }
+  
+  .navbar-open {
+    animation: slideInExpand 0.2s forwards;
+  }
+  
+  .navbar-close {
+    animation: slideOutShrink 0.2s forwards;
+  }
