@@ -41,8 +41,8 @@
 
   @layer components {
     .primary-btn {
-      @apply h-12 w-40 mx-auto lg:ml-0 px-6 py-3 cursor-pointer 
-      font-apercuMedium bg-blackLight border-2 border-orange-600 hover:bg-gray-700 transform 
+      @apply h-14 w-64 mx-auto lg:ml-0 px-6 py-3 cursor-pointer 
+      font-apercuMedium bg-blackLight border-2 border-orange-600 hover:bg-black transform 
       ease-in-out duration-300 text-center text-white rounded-lg;
     }
   }
@@ -62,13 +62,15 @@
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-image: url('../public/solanaSOL.png');
+    background-image: url('../public/laptop.png');
     background-size: 100% 100%; 
     background-repeat: no-repeat;
     background-position: center top;
     filter: brightness(30%);
     z-index: -1;
   }
+
+
 
   /* Navbar animations */
   /* ========================== */
