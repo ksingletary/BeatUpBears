@@ -70,6 +70,28 @@
     z-index: -1;
   }
 
+  .background-image-team {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none; /* No background image here */
+  }
+  
+  .background-image-team::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('../public/BUBBG.png');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: -1;
+  }
+
 
 
   /* Navbar animations */

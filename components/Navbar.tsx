@@ -68,13 +68,13 @@ export function Navbar() {
           >
             <div className="flex flex-col justify-center h-full text-2xl -space-y-5 -mt-14">
               <Link
-                href="/about"
+                href="/"
                 className="hover:bg-orange-500 block px-4 py-8 w-full text-right"
               >
-                About
+                Home
               </Link>
               <Link
-                href="/"
+                href="/team"
                 className="hover:bg-orange-500 block px-4 py-8 w-full text-right"
               >
                 The Team
