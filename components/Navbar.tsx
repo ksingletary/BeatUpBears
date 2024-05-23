@@ -80,7 +80,7 @@ export function Navbar() {
                 The Team
               </Link>
               <Link
-                href="/"
+                href="/collectibles"
                 className="hover:bg-orange-500 block px-4 py-8 w-full text-right"
               >
                 Collectibles

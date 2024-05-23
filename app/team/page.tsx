@@ -125,7 +125,7 @@ const teamMembers = [
     }
   ]
 
-const Team = () => {
+export default function Team() {
   return (
     <>
       <div className="background-image-team w-screen h-full relative flex flex-row-reverse items-center min-h-[750px]">
@@ -186,4 +186,3 @@ const Team = () => {
   )
 }
 
-export default Team
