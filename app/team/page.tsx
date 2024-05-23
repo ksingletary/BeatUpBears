@@ -129,7 +129,7 @@ export default function Team() {
   return (
     <>
       <div className="background-image-team w-screen h-full relative flex flex-row-reverse items-center min-h-[750px]">
-        <div className="absolute ml-44 text-white text-center top-20">
+        <div className="absolute ml-44 text-black text-center top-20 mr-12">
           <h1 className='text-6xl font-apercuBold'>ABOUT US</h1>
           <p className='text-xl font-apercuRegular'>Web3 for a cause. Join us.</p>
         </div>
@@ -162,13 +162,13 @@ export default function Team() {
           <h2 className="text-5xl font-bold font-apercuBold mb-12 text-left ml-20">Our Team</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 ml-20">
             {teamMembers.map((member, index) => (
-              <div key={index} className="bg-transparent shadow-lg rounded-lg overflow-hidden">
+              <div key={index} className="bg-transparent shadow-lg hover:shadow-xl cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-2 transform-gpu rounded-lg overflow-hidden">
                 <div className="relative h-64">
                   <Image
                     src={member.image}
                     alt={member.name}
-                    layout="fill"
-                    objectFit="cover"
+                    width={400}
+                    height={400}
                     className="rounded-t-lg"
                   />
                 </div>

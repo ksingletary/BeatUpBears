@@ -1,11 +1,22 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { RiBearSmileLine } from "react-icons/ri";
 
 export default function Collectibles() {
   return (
     <>
-        <div className="background-image-collectibles w-screen h-full relative flex flex-row-reverse items-center min-h-[950px]">
+        <div className="bg-orange-700 flex flex-row items-center justify-end min-h-[950px] -mr-16">
+            <div className='flex flex-col mb-52 items-center space-y-4'>
+                <h1 className='font-apercuBold text-5xl text-white ml-40'>Expanding the BUB Universe</h1>
+                <p className='font-apercuRegular text-xl text-white ml-40'>Collect your Beat Up Bear in both physical and digital form.</p>
+                <div className="flex justify-center space-x-6 ml-36">
+                    <Link href="/shop" className="text-blue-700">
+                        <RiBearSmileLine className='w-12 h-12' />
+                    </Link>                            
+                </div>
+            </div>          
+            <Image src="/sticker.png" alt="bear collectible" width={700} height={700} className=" mb-52 rotate-12" />
         </div>
         <div className="min-h-[850px] -mt-72 flex justify-center items-center bg-blackLight p-4 z-10">
             <div className="container ml-40">
@@ -14,20 +25,20 @@ export default function Collectibles() {
                     <div className="flex justify-center items-center relative">
                         <div className="bg-white absolute rounded-lg w-[590px] h-[669px] flex flex-col items-center justify-center">
                             <Image
-                            src="/4488.png"
+                            src="/3029.png"
                             width={560}
                             height={620}
-                            alt="BUB 4488"
+                            alt="BUB 3029"
                             className="relative z-10 rounded-md mb-2"
                             />
                             <div className="relative z-10 flex items-center font-apercuRegular justify-between w-full px-4 mb-2">
-                            <div className="text-lef mt-2">
-                                <h1 className="text-black text-3xl">#4488</h1>
-                                <p className="text-gray-500 text-md">Beat Up Bears</p>
-                            </div>
-                            <div className="text-right text-white bg-black rounded-md w-10 h-5 mb-4">
-                                <p className="text-center text-xs mt-1">SOL</p>
-                            </div>
+                                <div className="text-lef mt-2">
+                                    <h1 className="text-black text-3xl">#3029</h1>
+                                    <p className="text-gray-500 text-md">Beat Up Bears</p>
+                                </div>
+                                <div className="text-right text-white bg-black rounded-md w-10 h-5 mb-4">
+                                    <p className="text-center text-xs mt-1">SOL</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -56,8 +67,8 @@ export default function Collectibles() {
             <div className="flex flex-col gap-6 w-[400]">
               <div className="relative w-full h-[400px]">
                 <Image
-                  src="/1801.png"
-                  alt="1801 bub"
+                  src="/5181.png"
+                  alt="5181 bub"
                   width={400}
                   height={400}
                   className="rounded-xl"
@@ -65,8 +76,8 @@ export default function Collectibles() {
               </div>
               <div className="relative w-full h-[365px]">
                 <Image
-                  src="/6210.png"
-                  alt="6210 bub"
+                  src="/3700.png"
+                  alt="3700 bub"
                   width={400}
                   height={400}
                   className="rounded-xl"
@@ -77,8 +88,8 @@ export default function Collectibles() {
             <div className="flex justify-end w-[823px] h-[825px]">
               <div className="relative w-full h-full">
                 <Image
-                  src="/2359.png"
-                  alt="2459 bub"
+                  src="/3715.png"
+                  alt="3715 bub"
                   width={825}
                   height={825}
                   className="rounded-xl"
