@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { AiFillTwitterCircle } from "react-icons/ai";
 
 const teamMembers = [
     {
@@ -172,10 +173,13 @@ export default function Team() {
                     className="rounded-t-lg"
                   />
                 </div>
-                <div className="p-4 bg-yellow-50">
-                  <h3 className="text-xl font-semibold font-apercuBold">{member.name}</h3>
-                  <p className="text-sm text-gray-600 font-apercuMedium">{member.title}</p>
-                  <p className="text-sm mt-2 font-apercuRegular">{member.description}</p>
+                <div className="p-4 bg-yellow-50 relative">
+                    <Link href="#">
+                        <AiFillTwitterCircle className='absolute text-blue-400 hover:text-blue-600 right-0 mr-3 w-7 h-7 transition-all duration-500 ease-in-out hover:-translate-x-1 transform-gpu' />
+                    </Link>
+                    <h3 className="text-xl font-semibold font-apercuBold">{member.name}</h3>
+                    <p className="text-sm text-gray-600 font-apercuMedium">{member.title}</p>
+                    <p className="text-sm mt-2 font-apercuRegular">{member.description}</p>
                 </div>
               </div>
             ))}

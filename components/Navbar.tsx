@@ -24,13 +24,13 @@ export function Navbar() {
   // this is called when the mouse leaves the expanded navbar.
   // checks if mouse has left both the original navbar and the expanded navbar areas by using e.relatedTarget and closest method.
   const handleMouseLeave = (e: React.MouseEvent) => {
-    const target = e.relatedTarget as HTMLElement;
-    if (target && !target.closest('.navbar') && !target.closest('.expanded-navbar')) {
+    const target = e.relatedTarget as HTMLElement | null;
+    if (target && typeof target.closest === 'function' && !target.closest('.navbar') && !target.closest('.expanded-navbar')) {
       setIsAnimating(true);
       setTimeout(() => {
         setOpen(false);
         setIsAnimating(false);
-      }, 200); 
+      }, 200);
     }
   };
 
@@ -55,7 +55,7 @@ export function Navbar() {
         </div>
         
 
-        <button onClick={handleToggle} className="mt-auto text-white">
+        <button onClick={handleToggle} className="mt-auto text-white w-full">
           <FaBarsStaggered className="w-8 h-8 ml-8" />
         </button>
 
@@ -86,7 +86,7 @@ export function Navbar() {
                 Collectibles
               </Link>
               <Link
-                href="/"
+                href="/media"
                 className="hover:bg-orange-500 block px-4 py-8 w-full text-right"
               >
                 Media
