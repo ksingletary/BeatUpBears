@@ -80,8 +80,9 @@ export default function Collectibles() {
                         <div className="bg-white absolute rounded-lg w-[590px] h-[669px] flex flex-col items-center justify-center">
                             <Image
                             src="/3029.png"
-                            width={560}
-                            height={620}
+                            width={540}
+                            height={540}
+                            style={{width:'auto', height: "auto" }}
                             alt="BUB 3029"
                             className="relative z-10 rounded-md mb-2 w-auto h-auto"
                             />
@@ -308,13 +309,13 @@ export default function Collectibles() {
             <div className="container flex flex-col sm:flex-row items-center justify-center gap-6 mr-10">
                 <div className="sm:w-1/2 mb-10">
                     <div className="flex flex-row space-x-4 mb-8">
-                        <Image src="/tigersUnited.png" alt="endangered tigers logo" width={200} height={200} className="text-white" />
-                        <Image src="/multipleSclerosis.png" alt="multiple sclerosis logo" width={200} height={200} className="text-white" />
-                        <Image src="/woundedwarriors.png" alt="wounded warriors logo" width={100} height={100} className="text-white" />
+                        <Image src="/tigersUnited.png" alt="endangered tigers logo" width={100} height={100} style={{width:'auto', height: "auto" }} className="text-white" />
+                        <Image src="/multipleSclerosis.png" alt="multiple sclerosis logo" width={100} height={100} style={{width:'auto', height: "auto" }} className="text-white" />
+                        <Image src="/woundedwarriors.png" alt="wounded warriors logo" width={100} height={100} style={{width:'auto', height: "auto" }} className="text-white" />
                     </div>
                     <h1 className="text-5xl text-white font-apercuBold">Mindful Minting</h1>
                     <p className="text-lg text-white mt-4">Rare digital collectibles making the world a better place.</p>
-                    <Link href="/impact" className="primary-btn mt-10 text-xl font-apercuRegular text-center inline-block py-3 px-6 bg-blackLight text-white rounded-lg " > 
+                    <Link href="/footprint" className="primary-btn mt-10 text-xl font-apercuRegular text-center inline-block py-3 px-6 bg-blackLight text-white rounded-lg " > 
                         View More
                     </Link>
                 </div>

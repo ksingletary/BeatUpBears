@@ -92,6 +92,27 @@
     z-index: -1;
   }
 
+  .background-image-footprint {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none; /* No background image here */
+  }
+  
+  .background-image-footprint::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('../public/TIGERS.png');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: -1;
+  }
   
 
   

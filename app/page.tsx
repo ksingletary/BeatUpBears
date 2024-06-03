@@ -43,11 +43,12 @@ export default function Home() {
               <div className="bg-white absolute rounded-lg w-[590px] h-[669px] flex flex-col items-center justify-center">
                 <Image
                   src="/4519.png"
-                  width={560}
-                  height={620}
+                  width={520}
+                  height={520}
                   alt="BUB 4519"
+                  style={{width:'auto', height: "auto" }}
                   priority
-                  className="relative w-auto h-auto z-10 rounded-md mb-2"
+                  className="relative z-10 rounded-md mb-2"
                 />
                 <div className="relative z-10 flex items-center font-apercuRegular justify-between w-full px-4 mb-2">
                   <div className="text-lef mt-2">
@@ -150,9 +151,10 @@ export default function Home() {
               <div className="bg-white absolute rounded-lg w-[590px] h-[669px] flex flex-col items-center justify-center">
                 <Image
                   src="/5802.png"
-                  width={560}
-                  height={620}
+                  width={520}
+                  height={520}
                   alt="BUB 1198"
+                  style={{width:'auto', height: "auto" }}
                   className="relative w-auto h-auto z-10 rounded-md mb-2"
                 />
                 <div className="relative z-10 flex items-center font-apercuRegular justify-between w-full px-4 mb-2">
