@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
+import { FaBandcamp, FaSpotify, FaSoundcloud } from "react-icons/fa";
 
 import Image from 'next/image';
 
@@ -172,11 +174,34 @@ export default function Media() {
                     playsInline
                 />
                 <div className="relative font-apercuBold z-10 flex flex-col items-center justify-center h-full text-center pt-64 ml-10">
-                    <h1 className="text-white text-6xl font-bold mb-4">Media</h1>
-                    <p className="text-white text-2xl">Art forms of our bubs!</p>
+                    <h1 className="text-white text-5xl font-bold mb-4">Experimental Beatmakers</h1>
+                    <p className="text-white text-xl">We have artists around the world creating music for our <span className='text-orange-500'>bubs</span>!</p>
                 </div>
             </div>
       </div>
+      <div className='min-h-[550px] bg-blackLight flex flex-col justify-center '>
+        <div className='container ml-40 '>
+            <div className='space-y-4'>
+                <h1 className='text-5xl text-white font-apercuBold'>Platforms for our <span className='text-orange-500'>BUB</span> Beatmakers</h1>
+                <p className='text-2xl text-white font-apercuRegular'>
+                    Perfect for exploring, studying or working, our mix tapes will add a unique and nostalgic vibe to your daily routine.
+                </p>                            
+            </div>
+            
+            <div className='flex justify-center mt-12 space-x-8'>
+                <Link href="https://bandcamp.com/">
+                    <FaBandcamp className='w-40 h-40 hover:text-blue-500 text-blue-400' />
+                </Link>
+                <Link href="https://open.spotify.com/">
+                    <FaSpotify className='w-40 h-40 hover:text-green-600 text-green-500' />  
+                </Link>
+                <Link href="https://soundcloud.com/discover">
+                    <FaSoundcloud className='w-40 h-40 hover:text-blue-600 text-blue-500' />                
+                </Link>
+            </div>
+        </div>
+      </div>
+      
     </>
   );
 }

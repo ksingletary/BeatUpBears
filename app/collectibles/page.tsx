@@ -83,7 +83,7 @@ export default function Collectibles() {
                             width={560}
                             height={620}
                             alt="BUB 3029"
-                            className="relative z-10 rounded-md mb-2"
+                            className="relative z-10 rounded-md mb-2 w-auto h-auto"
                             />
                             <div className="relative z-10 flex items-center font-apercuRegular justify-between w-full px-4 mb-2">
                                 <div className="text-lef mt-2">
@@ -293,8 +293,8 @@ export default function Collectibles() {
                     </div>
                     <div className='lg:col-span-1 bg-gray-400 rounded-xl p-4 flex flex-col font-apercuMedium'>
                         <div className='flex flex-row justify-center space-x-5'>
-                            <Image src={perks[selectedPerk].image1} alt="3280 bub" width={300} height={300} className='rounded-xl object-cover' />
-                            <Image src={perks[selectedPerk].image2} alt="7428 bub" width={250} height={250} className='rounded-xl object-cover' />
+                            <Image src={perks[selectedPerk].image1} alt="3280 bub" width={200} height={200} style={{width:'auto', height: "auto" }} className='rounded-xl object-cover' />
+                            <Image src={perks[selectedPerk].image2} alt="7428 bub" width={150} height={150} style={{width:'auto', height: "auto" }} className='rounded-xl object-cover ' />
                         </div>
                         <div className='p-4'>
                             <h2 className='text-xl font-semibold mb-2'>{perks[selectedPerk].title}</h2>

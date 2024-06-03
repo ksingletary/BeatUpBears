@@ -46,7 +46,8 @@ export default function Home() {
                   width={560}
                   height={620}
                   alt="BUB 4519"
-                  className="relative z-10 rounded-md mb-2"
+                  priority
+                  className="relative w-auto h-auto z-10 rounded-md mb-2"
                 />
                 <div className="relative z-10 flex items-center font-apercuRegular justify-between w-full px-4 mb-2">
                   <div className="text-lef mt-2">
@@ -152,7 +153,7 @@ export default function Home() {
                   width={560}
                   height={620}
                   alt="BUB 1198"
-                  className="relative z-10 rounded-md mb-2"
+                  className="relative w-auto h-auto z-10 rounded-md mb-2"
                 />
                 <div className="relative z-10 flex items-center font-apercuRegular justify-between w-full px-4 mb-2">
                   <div className="text-lef mt-2">
@@ -202,9 +203,9 @@ export default function Home() {
         <div className="container flex flex-col sm:flex-row items-center justify-center gap-6 mr-10">
           <div className="sm:w-1/2 mb-10">
             <div className="flex flex-row space-x-4 mb-8">
-              <Image src="/tigersUnited.png" alt="endangered tigers logo" width={200} height={200} className="text-white" />
-              <Image src="/multipleSclerosis.png" alt="multiple sclerosis logo" width={200} height={200} className="text-white" />
-              <Image src="/woundedwarriors.png" alt="wounded warriors logo" width={100} height={100} className="text-white" />
+              <Image src="/tigersUnited.png" alt="endangered tigers logo" width={100} height={100} style={{width:'auto', height: "auto" }} className="text-white" />
+              <Image src="/multipleSclerosis.png" alt="multiple sclerosis logo" width={100} height={100} style={{width:'auto', height: "auto" }} className="text-white" />
+              <Image src="/woundedwarriors.png" alt="wounded warriors logo" width={100} height={100} style={{width:'auto', height: "auto" }} className="text-white" />
             </div>
             <h1 className="text-5xl text-white font-apercuBold">The Future of Web3</h1>
             <p className="text-lg text-white mt-4">Owning a Beat Up Bear isn't just about getting a unique NFT. It's about being part of a community that's making a real impact.</p>

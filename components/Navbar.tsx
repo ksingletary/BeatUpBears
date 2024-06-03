@@ -44,6 +44,7 @@ export function Navbar() {
               alt="bublogo"
               width={200}
               height={200}
+              priority
               className="absolute"
             />
           </Link>         
@@ -92,13 +93,13 @@ export function Navbar() {
                 Media
               </Link>
               <Link
-                href="/"
+                href="/footprint"
                 className="hover:bg-orange-500 block px-4 py-8 w-full text-right"
               >
-                Impact
+                Footprint
               </Link>
               <Link
-                href="/"
+                href="/shop"
                 className="hover:bg-orange-500 block px-4 py-8 w-full text-right"
               >
                 Shop
