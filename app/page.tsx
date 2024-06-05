@@ -40,11 +40,11 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Image section */}
             <div className="flex justify-center items-center relative">
-              <div className="bg-white absolute rounded-lg w-[590px] h-[669px] flex flex-col items-center justify-center">
+              <div className="bg-white absolute rounded-lg w-[630px] h-[710px] flex flex-col items-center justify-center">
                 <Image
                   src="/4519.png"
-                  width={520}
-                  height={520}
+                  width={550}
+                  height={550}
                   alt="BUB 4519"
                   style={{width:'auto', height: "auto" }}
                   priority
@@ -53,7 +53,7 @@ export default function Home() {
                 <div className="relative z-10 flex items-center font-apercuRegular justify-between w-full px-4 mb-2">
                   <div className="text-lef mt-2">
                     <h1 className="text-black text-3xl">#4519</h1>
-                    <p className="text-gray-500 text-md">Beat Up Bears</p>
+                    <p className="text-gray-500 text-lg">Beat Up Bears</p>
                   </div>
                   <div className="text-right text-white bg-black rounded-md w-10 h-5 mb-4">
                       <p className="text-center text-xs mt-1">SOL</p>
@@ -63,14 +63,14 @@ export default function Home() {
             </div>
             {/* Text content section */}
             <div className="flex flex-col justify-center gap-6 sm:pt-0 ml-16 text-white">
-              <p className="text-xl font-apercuMedium">AN ONLINE CULTURE SHIFT</p>
+              <h3 className="text-xl font-apercuMedium">AN ONLINE CULTURE SHIFT</h3>
               <h1 className="text-5xl font-apercuBold">Beat Up Bears</h1>
               <p className="font-apercuRegular text-lg">
-              Beat Up Bears is a collection of 8,888 unique digital collectibles that represents an online cultural shift, proudly embodying the idea of being beat up, but okay. 
-              The brand was launched in April 2022 and broke all digital collectible records by generating an unprecedented $18 million in sales within 24 hours of its launch.
+                Beat Up Bears comprises 8,888 distinct digital collectibles, symbolizing a digital cultural evolution, proudly embracing resilience amidst adversity. 
+                Launched in September 2022, it shattered digital collectible records, amassing an unprecedented $18 million in sales within 24 hours.
               </p>
               <p className="text-lg font-apercuRegular">
-              The memorable art and core positive message, "Beat up but okay," resonated with digital collectors, leading to the rapid growth of a global community that strives to be a force for good.
+                The memorable artwork and central affirmative motto, “Beat up but okay,” struck a chord with digital collectors, fueling the swift expansion of a worldwide community committed to positive impact.
               </p>
               <Link href="/" className="primary-btn mt-6 text-xl font-apercuRegular text-center">
                 <p className="mb-10">BROWSE OUR BUBS</p>
@@ -148,11 +148,11 @@ export default function Home() {
             </div>
             {/* Image section */}
             <div className="flex justify-center items-center relative">
-              <div className="bg-white absolute rounded-lg w-[590px] h-[669px] flex flex-col items-center justify-center">
+              <div className="bg-white absolute rounded-lg w-[630px] h-[710px] flex flex-col items-center justify-center">
                 <Image
                   src="/5802.png"
-                  width={520}
-                  height={520}
+                  width={550}
+                  height={550}
                   alt="BUB 1198"
                   style={{width:'auto', height: "auto" }}
                   className="relative w-auto h-auto z-10 rounded-md mb-2"
@@ -160,7 +160,7 @@ export default function Home() {
                 <div className="relative z-10 flex items-center font-apercuRegular justify-between w-full px-4 mb-2">
                   <div className="text-lef mt-2">
                     <h1 className="text-black text-3xl">Wounded Warriors</h1>
-                    <p className="text-gray-500 text-md">Beat Up Bears Digital Collectible</p>
+                    <p className="text-gray-500 text-lg">Beat Up Bears Digital Collectible</p>
                   </div>
                   <div className="text-right text-white bg-black rounded-md w-10 h-5 mb-4">
                       <p className="text-center text-xs mt-1">SOL</p>

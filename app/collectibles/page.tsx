@@ -60,7 +60,7 @@ export default function Collectibles() {
     
   return (
     <>
-        <div className="bg-blue-800 flex flex-row items-center justify-end min-h-[950px] -mr-16">
+        <div className="bg-blue-800  flex flex-row items-center justify-end min-h-[950px]">
             <div className='flex flex-col mb-52 items-center space-y-4'>
                 <h1 className='font-apercuBold text-5xl text-white ml-40'>Expanding the BUB Universe</h1>
                 <p className='font-apercuRegular text-xl text-white ml-40'>Collect your Beat Up Bear in both physical and digital form.</p>
@@ -70,7 +70,7 @@ export default function Collectibles() {
                     </Link>                            
                 </div>
             </div>          
-            <Image src="/sticker.png" alt="bear collectible" width={700} height={700} className=" mb-52 rotate-12" />
+            <Image src="/sticker.png" alt="bear collectible" width={700} height={700} className=" mb-52" />
         </div>
         <div className="min-h-[850px] -mt-72 flex justify-center items-center bg-blackLight p-4 z-10">
             <div className="container ml-40">
@@ -117,41 +117,41 @@ export default function Collectibles() {
         </div>
         <div className='min-h-[950px] bg-blackLight flex flex-col items-center justify-center'> 
             <div className="container mt-20">  
-            <div className="grid grid-cols-1 sm:grid-cols-[400px_auto] gap-10 -mt-24 ml-16">
-                {/* Left column with two smaller images stacked */}
-                <div className="flex flex-col gap-6 w-[400]">
-                <div className="relative w-full h-[400px]">
-                    <Image
-                    src="/5181.png"
-                    alt="5181 bub"
-                    width={400}
-                    height={400}
-                    className="rounded-xl"
-                    />
+                <div className="grid grid-cols-1 sm:grid-cols-[400px_auto] gap-10 -mt-24 ml-16">
+                    {/* Left column with two smaller images stacked */}
+                    <div className="flex flex-col gap-6 w-[400]">
+                        <div className="relative w-full h-[400px]">
+                            <Image
+                            src="/5181.png"
+                            alt="5181 bub"
+                            width={400}
+                            height={400}
+                            className="rounded-xl"
+                            />
+                        </div>
+                        <div className="relative w-full h-[365px]">
+                            <Image
+                            src="/3700.png"
+                            alt="3700 bub"
+                            width={400}
+                            height={400}
+                            className="rounded-xl"
+                            />
+                        </div>
+                    </div>
+                    {/* Right column with the larger image */}
+                    <div className="flex justify-end w-[823px] h-[825px] ">
+                        <div className="relative w-full h-full ">
+                            <Image
+                            src="/3715.png"
+                            alt="3715 bub"
+                            width={825}
+                            height={825}
+                            className="rounded-xl"
+                            />
+                        </div>
+                    </div>
                 </div>
-                <div className="relative w-full h-[365px]">
-                    <Image
-                    src="/3700.png"
-                    alt="3700 bub"
-                    width={400}
-                    height={400}
-                    className="rounded-xl"
-                    />
-                </div>
-                </div>
-                {/* Right column with the larger image */}
-                <div className="flex justify-end w-[823px] h-[825px]">
-                <div className="relative w-full h-full">
-                    <Image
-                    src="/3715.png"
-                    alt="3715 bub"
-                    width={825}
-                    height={825}
-                    className="rounded-xl"
-                    />
-                </div>
-                </div>
-            </div>
             </div>
         </div>
         <div className='min-h-[950px] flex flex-col justify-center items-center bg-blackDark'>
