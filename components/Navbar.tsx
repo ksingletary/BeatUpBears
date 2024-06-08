@@ -8,13 +8,6 @@ import Image from "next/image";
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    // Ensure component is properly hydrated
-    console.log("Navbar mounted and hydrated");
-    setIsMounted(true);
-  }, []);
 
   const handleToggle = () => {
     if (open) {
@@ -71,24 +64,32 @@ export function Navbar() {
                 open && !isAnimating ? "navbar-open" : "navbar-close"
               }`}
             >
-              <div className="flex flex-col justify-center h-full text-2xl -space-y-5 -mt-14">
+              <div className="flex flex-col justify-center h-full text-lg -space-y-5 -mt-20 ">
                 <Link href="/" className="hover:bg-orange-500 block px-4 py-8 w-full text-right">
-                  Home
+                  HOME
                 </Link>
                 <Link href="/team" className="hover:bg-orange-500 block px-4 py-8 w-full text-right">
-                  The Team
+                  THE TEAM
                 </Link>
                 <Link href="/collectibles" className="hover:bg-orange-500 block px-4 py-8 w-full text-right">
-                  Collectibles
+                  COLLECTIBLES
                 </Link>
                 <Link href="/media" className="hover:bg-orange-500 block px-4 py-8 w-full text-right">
-                  Media
+                  MEDIA
                 </Link>
                 <Link href="/footprint" className="hover:bg-orange-500 block px-4 py-8 w-full text-right">
-                  Footprint
+                  FOOOTPRINT
                 </Link>
-                <Link href="/shop" className="hover:bg-orange-500 block px-4 py-8 w-full text-right">
-                  Shop
+                <Link href="#" className="hover:bg-orange-500 block px-4 py-8 w-full text-right group">
+                  SHOP <span className="text-orange-600 group-hover:text-white">&#40;COMING SOON!&#41;</span>
+                </Link>
+              </div>
+              <div className="flex flex-col -mt-20 -space-y-5">
+                <Link href="/login" className="hover:bg-orange-500 block px-4 py-8 w-full text-right">
+                  LOGIN
+                </Link>
+                <Link href="/account/create" className="hover:bg-orange-500 block px-4 py-8 w-full text-right">
+                  CREATE ACCOUNT
                 </Link>
               </div>
             </div>

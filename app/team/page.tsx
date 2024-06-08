@@ -49,7 +49,7 @@ const teamMembers = [
     {
       name: 'Daniel Garcia',
       title: 'Metaverse Architect',
-      image: '/6200.png',
+      image: '/5109.png',
       description: "Daniel's 12 years of industry experience inform his adept navigation of transformative landscapes. He innovates solutions for complex challenges, shaping immersive experiences in the metaverse."
     },
     {

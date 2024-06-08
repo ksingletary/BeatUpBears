@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { IoClose } from "react-icons/io5";
 import Link from 'next/link';
 
-const Footprint = () => {
+export default function Footprint() {
   return (
     <>
         <div className="background-image-footprint w-screen h-auto relative items-center min-h-[750px]">
@@ -221,5 +221,3 @@ const Footprint = () => {
     </>
   )
 }
-
-export default Footprint
