@@ -14,7 +14,7 @@ export default function Footprint() {
                 <p className="text-2xl w-1/2 text-left font-apercuRegular mb-4">
                     We may be Bears, but we care about all our animal brethren.
                 </p>
-                <Image src="/tigersunited.png" alt='tigers united' width={200} height={200} style={{width: 'auto', height: 'auto'}} className='ml-28' />
+                <Image src="/tigersunited.png" alt='tigers united' width={200} height={200} style={{width: 'auto', height: 'auto'}} className='ml-28' priority />
             </div>
       </div>
       <div className='min-h-[450px] flex flex-col justify-center bg-blackLight'>
