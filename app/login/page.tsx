@@ -11,17 +11,17 @@ export default function LoginPage() {
 
   useEffect(() => {
     if (status === "authenticated") {
-      router.push("/account");
+      router.push("/account/create");
     } else if (status === "unauthenticated") {
       signIn("twitter");
     }
   }, [status, router]);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-black">
+    <div className="flex items-center justify-center min-h-screen bg-blackLight">
       <div className="text-center">
-        <ReactLoading type="spinningBubbles" color="#FFA500" height={100} width={100} />
-        <h1 className="text-2xl text-white mt-4">Redirecting to your account...</h1>
+        <ReactLoading type="bars" color="#FFA500" height={100} width={100} className="ml-24" />
+        <h1 className="text-2xl text-white mt-4 ml-6 font-apercuBold">Linking your account...</h1>
       </div>
     </div>
   );

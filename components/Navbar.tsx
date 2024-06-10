@@ -4,7 +4,9 @@ import Link from "next/link";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { useState } from "react";
 import Image from "next/image";
-import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession } from "next-auth/react";
+import { FcSettings } from "react-icons/fc";
+
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -86,7 +88,7 @@ export function Navbar() {
                 SHOP <span className="text-orange-600 group-hover:text-white">&#40;COMING SOON!&#41;</span>
               </Link>
             </div>
-            <div className="flex flex-col -mt-20 -space-y-5">
+            <div className="flex flex-col -mt-24 -space-y-5">
               {!session ? (
                 <>
                   <Link href="/login" className="hover:bg-orange-500 block px-4 py-8 w-full text-right">
@@ -98,7 +100,8 @@ export function Navbar() {
                 </>
               ) : (
                 <>
-                  <Link href="/account/settings" className="hover:bg-orange-500 text-lg  block px-4 py-8 w-full text-right bg-black">
+                  <Link href="/account/settings" className="hover:bg-orange-500 text-lg  block px-4 py-10 w-full text-right bg-black">
+                    <FcSettings className="absolute left-3 w-12 h-12 -mt-4 "/>
                     ACCOUNT SETTINGS
                   </Link>
                   <Link href="/account" className="relative hover:bg-orange-500 px-4 py-8 w-full text-right bg-black flex items-center justify-end space-x-2">
