@@ -1,6 +1,7 @@
 "use client";
 
 import { useSession, signOut } from "next-auth/react";
+import { IoReturnDownBack } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,104 +9,147 @@ export default function AccountSettings() {
   const { data: session } = useSession();
 
   return (
-    <div className="flex h-screen ml-44">
-      <aside className="w-1/4 p-8 bg-blackLighter text-white fixed h-full">
-        <h1 className="text-4xl font-semibold">Account</h1>
-        <p className="mt-4">Manage your linked social media accounts, wallets, and notification settings through the account page.</p>
-      </aside>
-      <main className="ml-1/4 w-3/4 overflow-y-auto p-8">
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold bg-black p-4">BASIC INFO</h2>
-          <div className="mt-4">
-            <h3 className="text-xl font-semibold">LINKED ACCOUNTS</h3>
-            <p className="mt-2 text-gray-400">Your linked social media & email accounts.</p>
+    <div className="flex min-h-screen flex-row bg-blackDark">
+      {/* Fixed Left Section */}
+      <div className="h-full w-2/5 space-y-10 bg-blackDark p-10 mt-16 ml-32 z-0">
+        <div>
+          <h1 className="font-apercuBold text-4xl text-white">Account</h1>
+          <Link href="/account">
+            <IoReturnDownBack className="h-10 w-10 text-white hover:text-orange-600" />
+          </Link>
+        </div>
+        <p className="font-apercuRegular text-xl text-gray-400">
+          Manage your linked social media accounts, wallets, and notification
+          settings through the account page.
+        </p>
+      </div>
+
+      {/* Scrollable Right Section */}
+      <div className="ml-auto w-3/5 space-y-10 mt-28 z-10  ">
+          {/* Basic Info */}
+          <div className="rounded-lg bg-blackDark p-4">
+            <h2 className="font-apercuBold text-2xl text-white">BASIC INFO</h2>
             <div className="mt-4 space-y-4">
-              <div className="flex items-center justify-between p-4 bg-gray-800 rounded-lg">
-                <span>Discord</span>
-                <button className="text-green-500">CONNECT</button>
+              <div className="text-white">LINKED ACCOUNTS</div>
+              <div className="text-gray-400">
+                Your linked social media & email accounts.
               </div>
-              <div className="flex items-center justify-between p-4 bg-gray-800 rounded-lg">
-                <span>Twitter</span>
-                <input
-                  type="text"
-                  value={session?.user?.name || ""}
-                  className="bg-transparent border-none outline-none text-gray-400"
-                  disabled
-                />
-              </div>
-              <div className="flex items-center justify-between p-4 bg-gray-800 rounded-lg">
-                <span>Email</span>
-                <input type="text" className="bg-transparent border-none outline-none text-gray-400" />
-                <button className="text-gray-500">SAVE</button>
+              <div className="flex flex-col space-y-4">
+                <div className="flex justify-between">
+                  <span className="text-gray-400">DISCORD</span>
+                  <button className="rounded border border-green-500 px-4 py-2 text-green-500">
+                    CONNECT
+                  </button>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-400">TWITTER</span>
+                  <input
+                    className="w-1/2 rounded border border-gray-600 bg-gray-700 p-2 text-white"
+                    type="text"
+                    value="@ Objektiv_"
+                    readOnly
+                  />
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-400">EMAIL</span>
+                  <input
+                    className="w-1/2 rounded border border-gray-600 bg-gray-700 p-2 text-white"
+                    type="email"
+                  />
+                  <button className="rounded border border-gray-600 px-4 py-2 text-gray-400">
+                    SAVE
+                  </button>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-gray-400">Newsletter</span>
+                  <input type="checkbox" className="toggle-checkbox" />
+                </div>
               </div>
             </div>
           </div>
-        </section>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold bg-black p-4">WALLET MANAGER</h2>
-          <div className="mt-4 space-y-4">
-            <div className="flex items-center justify-between p-4 bg-gray-800 rounded-lg">
-              <span>Solana Wallets</span>
-              <button className="text-green-500">SOL WALLET</button>
-            </div>
-            <div className="flex items-center justify-between p-4 bg-gray-800 rounded-lg">
-              <span>Bitcoin Wallets</span>
-              <button className="text-green-500">BTC WALLET</button>
-            </div>
-            <div className="flex items-center justify-between p-4 bg-gray-800 rounded-lg">
-              <span>Ethereum Wallets</span>
-              <button className="text-green-500">ETH WALLET</button>
+          {/* Wallet Manager */}
+          <div className="rounded-lg bg-gray-800 p-4">
+            <h2 className="font-apercuBold text-2xl text-white">
+              WALLET MANAGER
+            </h2>
+            <div className="mt-4 space-y-4">
+              <div className="text-white">SOLANA WALLETS</div>
+              <div className="text-gray-400">
+                Easily manage your Solana wallet connections by linking or
+                unlinking here
+              </div>
+              <button className="rounded border border-green-500 px-4 py-2 text-green-500">
+                SOL WALLET
+              </button>
+
+              <div className="text-white">BITCOIN WALLETS</div>
+              <div className="text-gray-400">
+                Easily manage your Bitcoin wallet connections by linking or
+                unlinking here
+              </div>
+              <button className="rounded border border-green-500 px-4 py-2 text-green-500">
+                BTC WALLET
+              </button>
+
+              <div className="text-white">ETHEREUM WALLETS</div>
+              <div className="text-gray-400">
+                Easily manage your Ethereum wallet connections by linking or
+                unlinking here
+              </div>
+              <button className="rounded border border-green-500 px-4 py-2 text-green-500">
+                ETH WALLET
+              </button>
             </div>
           </div>
-        </section>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold bg-black p-4">NOTIFICATION SETTINGS</h2>
-          <div className="mt-4 space-y-4">
-            <div className="flex items-center justify-between p-4 bg-gray-800 rounded-lg">
-              <span>Account</span>
-              <input type="checkbox" className="form-toggle" defaultChecked />
-            </div>
-            <div className="flex items-center justify-between p-4 bg-gray-800 rounded-lg">
-              <span>Grails and Badges</span>
-              <input type="checkbox" className="form-toggle" defaultChecked />
-            </div>
-            <div className="flex items-center justify-between p-4 bg-gray-800 rounded-lg">
-              <span>Tickets</span>
-              <input type="checkbox" className="form-toggle" defaultChecked />
-            </div>
-            <div className="flex items-center justify-between p-4 bg-gray-800 rounded-lg">
-              <span>Raffles</span>
-              <input type="checkbox" className="form-toggle" defaultChecked />
-            </div>
-            <div className="flex items-center justify-between p-4 bg-gray-800 rounded-lg">
-              <span>Decimals</span>
-              <input type="checkbox" className="form-toggle" defaultChecked />
-            </div>
-            <div className="flex items-center justify-between p-4 bg-gray-800 rounded-lg">
-              <span>Streaks</span>
-              <input type="checkbox" className="form-toggle" defaultChecked />
-            </div>
-            <div className="flex items-center justify-between p-4 bg-gray-800 rounded-lg">
-              <span>Turn off Notifications</span>
-              <input type="checkbox" className="form-toggle" />
+          {/* Notification Settings */}
+          <div className="rounded-lg bg-gray-800 p-4">
+            <h2 className="font-apercuBold text-2xl text-white">
+              NOTIFICATION SETTINGS
+            </h2>
+            <div className="mt-4 space-y-4">
+              <div className="flex items-center justify-between">
+                <span className="text-white">Account</span>
+                <input type="checkbox" className="toggle-checkbox" />
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-white">Grails and Badges</span>
+                <input type="checkbox" className="toggle-checkbox" />
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-white">Tickets</span>
+                <input type="checkbox" className="toggle-checkbox" />
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-white">Raffles</span>
+                <input type="checkbox" className="toggle-checkbox" />
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-white">Decimals</span>
+                <input type="checkbox" className="toggle-checkbox" />
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-white">Streaks</span>
+                <input type="checkbox" className="toggle-checkbox" />
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-white">Turn off Notifications</span>
+                <input type="checkbox" className="toggle-checkbox" />
+              </div>
             </div>
           </div>
-        </section>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold bg-black p-4">SIGN OUT</h2>
-          <div className="mt-4">
+          {/* Sign Out */}
+          <div className="rounded-lg bg-gray-800 p-4">
             <button
-              className="w-full p-4 bg-red-600 text-white rounded-lg"
               onClick={() => signOut()}
+              className="w-full hover:bg-black rounded border border-gray-600 px-4 py-2 text-white"
             >
               SIGN OUT
             </button>
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </div>
   );
 }

@@ -1,10 +1,10 @@
 import type { NextAuthOptions, Session, User } from "next-auth";
 import TwitterProvider from "next-auth/providers/twitter";
-import { JWT } from 'next-auth/jwt';
+import { JWT } from "next-auth/jwt";
 
 interface ExtendedUser extends User {
-    id: string;
-  }
+  id: string;
+}
 
 export const options: NextAuthOptions = {
   providers: [
@@ -30,6 +30,14 @@ export const options: NextAuthOptions = {
       }
       return token;
     },
+    async redirect({ url, baseUrl }) {
+      // Always redirect to /account/create after login
+      return `${baseUrl}/account/create`;
+    },
   },
   debug: true,
+  secret: process.env.SECRET,
+  session: {
+    strategy: "jwt",
+  },
 };

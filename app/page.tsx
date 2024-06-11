@@ -140,7 +140,7 @@ export default function Home() {
             {/* Text content section */}
             <div className="flex flex-col justify-center gap-6 sm:pt-0 mr-16 text-white">
               <Link href="/impact" className="text-xl font-apercuMedium hover:text-orange-500">OUR CHARITY EFFORTS</Link>
-              <h1 className="text-5xl font-apercuBold">$41K in 48 Hrs for Wounded Warriors in "Insert Country Here"</h1>
+              <h1 className="text-5xl font-apercuBold">$41K in 48 Hrs for Wounded Warriors in &quot;Insert Country Here&quot;</h1>
               <p className="font-apercuRegular text-lg">
               In early 2024, a catastrophic earthquake hit Turkey and Syria, affecting over 15 million people. 
               Our community united and raised $23,000 USD in just two days, through an open edition mint and a digital collectible auction of a Beat Up Bear in UNHCR relief gear.
@@ -210,7 +210,7 @@ export default function Home() {
               <Image src="/woundedwarriors.png" alt="wounded warriors logo" width={100} height={100} style={{width:'auto', height: "auto" }} className="text-white" />
             </div>
             <h1 className="text-5xl text-white font-apercuBold">The Future of Web3</h1>
-            <p className="text-lg text-white mt-4">Owning a Beat Up Bear isn't just about getting a unique NFT. It's about being part of a community that's making a real impact.</p>
+            <p className="text-lg text-white mt-4">Owning a Beat Up Bear isn&apos;t just about getting a unique NFT. It&apos;s about being part of a community that&apos;s making a real impact.</p>
             <Link href="/impact" className="primary-btn mt-10 text-xl font-apercuRegular text-center inline-block py-3 px-6 bg-blackLight text-white rounded-lg " > 
                 View More
             </Link>
@@ -227,7 +227,7 @@ export default function Home() {
             </h1>
             <div className="mt-10 ml-10">
               <h3 className="text-orange-500 font-apercuRegular text-2xl">John Doe</h3>
-              <p className="text-white font-apercuRegular text-2xl">CEO OF "Insert Company Here"</p>
+              <p className="text-white font-apercuRegular text-2xl">CEO OF &quot;Insert Company Here&quot;</p>
             </div>
             
           </div>

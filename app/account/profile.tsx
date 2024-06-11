@@ -35,7 +35,7 @@ export default function Profile({ user, pagetype }: Props) {
     <section className="flex flex-col items-center gap-4 bg-blackLight p-6 rounded-lg shadow-lg">
       {greeting}
       {userImage}
-      <p className="text-2xl text-center text-white">{pagetype} Page!</p>
+      <p className="text-2xl text-center text-white">{pagetype} Cool Page!</p>
     </section>
   );
 }

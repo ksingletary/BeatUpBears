@@ -54,7 +54,7 @@ export default function Collectibles() {
                         The brand was launched in April 2022 and broke all digital collectible records by generating an unprecedented $18 million in sales within 24 hours of its launch.
                         </p>
                         <p className="text-lg font-apercuRegular">
-                        The memorable art and core positive message, "Beat up but okay," resonated with digital collectors, leading to the rapid growth of a global community that strives to be a force for good.
+                        The memorable art and core positive message, &quot;Beat up but okay&quot;, resonated with digital collectors, leading to the rapid growth of a global community that strives to be a force for good.
                         </p>
                         <Link href="/" className="primary-btn mt-6 text-xl font-apercuRegular text-center">
                             <p className="mb-10">BROWSE OUR BUBS</p>

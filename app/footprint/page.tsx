@@ -75,7 +75,7 @@ export default function Footprint() {
                         <h1 className="text-5xl font-apercuBold">Bruised But Big-Hearted</h1>
                         <p className="font-apercuRegular text-lg">
                         Even though they may be the toughest brawlers of the forest, the Beat Up Bears have a soft spot for their fellow endangered species. 
-                        That's why they've partnered with Tigers United, a leading conservation organization dedicated to protecting majestic tigers around the world. 
+                        That&apos;s why they&apos;ve partnered with Tigers United, a leading conservation organization dedicated to protecting majestic tigers around the world. 
                         </p>
                     </div>
                 </div>
@@ -146,7 +146,7 @@ export default function Footprint() {
                     </h1>
                     <div className="mt-6 ml-10">
                         <h3 className="text-orange-500 font-apercuRegular text-2xl">John Doe</h3>
-                        <p className="text-white font-apercuRegular text-2xl">CEO OF "Insert Company Here"</p>
+                        <p className="text-white font-apercuRegular text-2xl">CEO OF &quot;Insert Company Here&quot;</p>
                     </div>
                 </div>
             </div>
@@ -186,7 +186,7 @@ export default function Footprint() {
                     {/* Text content section */}
                     <div className="flex flex-col justify-center gap-6 sm:pt-0 ml-16 text-white">
                         <h3 className="text-xl font-apercuMedium hover:text-orange-500">REHABILITTATIVE CARE</h3>
-                        <h1 className="text-5xl font-apercuBold">$41K in 48 Hrs for Wounded Warriors in "Insert Country Here"</h1>
+                        <h1 className="text-5xl font-apercuBold">$41K in 48 Hrs for Wounded Warriors in &quot;Insert Country Here&quot;</h1>
                         <p className="font-apercuRegular text-lg">
                             In early 2024, a catastrophic earthquake hit Turkey and Syria, affecting over 15 million people. 
                             Our community united and raised $23,000 USD in just two days, through an open edition mint and a digital collectible auction of a Beat Up Bear in UNHCR relief gear.
@@ -199,11 +199,11 @@ export default function Footprint() {
             <div className='container mx-auto flex flex-col justify-center' style={{ minHeight: '400px' }}>
                 <div className='mb-28'>
                     <h1 className="text-5xl text-white font-apercuMedium ml-10">
-                        Beat Up Bears' vision to spread messages of hope in support of meaningful causes inspires us all.
+                        Beat Up Bears&apos; vision to spread messages of hope in support of meaningful causes inspires us all.
                     </h1>
                     <div className="mt-6 ml-10">
                         <h3 className="text-orange-500 font-apercuRegular text-2xl">John Doe</h3>
-                        <p className="text-white font-apercuRegular text-2xl">CEO OF "Insert Company Here"</p>
+                        <p className="text-white font-apercuRegular text-2xl">CEO OF &quot;Insert Company Here&quot;</p>
                     </div>
                 </div>
             </div>
