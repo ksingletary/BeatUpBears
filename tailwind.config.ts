@@ -15,9 +15,11 @@ const config: Config = {
       },
       colors: {
         cream: '#FFFDD0',
+        blackDarker: '#1a1a1a',
         blackDark: '#1f1f1f',
         blackLight: '#262626',
-        blackLighter: '#3a3a3a'
+        blackLighter: '#3a3a3a',
+        blackLightest: '#4a4a4a'
       },
       container : {
         center: true,
