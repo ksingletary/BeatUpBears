@@ -7,7 +7,6 @@ import Image from "next/image";
 import { useSession } from "next-auth/react";
 import { FcSettings } from "react-icons/fc";
 
-
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -27,7 +26,7 @@ export function Navbar() {
 
   const handleMouseLeave = (e: React.MouseEvent) => {
     const target = e.relatedTarget as HTMLElement | null;
-    if (target && typeof target.closest === 'function' && !target.closest('.navbar') && !target.closest('.expanded-navbar')) {
+    if (target && typeof target.closest === "function" && !target.closest(".navbar") && !target.closest(".expanded-navbar")) {
       setIsAnimating(true);
       setTimeout(() => {
         setOpen(false);
@@ -50,9 +49,9 @@ export function Navbar() {
               className="absolute"
             />
           </Link>
-          <div className="flex ml-10 font-CaeciliaSemi text-3xl h-[62vh] w-8 justify-center overflow-hidden">
-            <div>
-              <h1 className="mt-80 self-center whitespace-nowrap -rotate-90">Beat Up Bears®</h1>
+          <div className="flex ml-10 font-CaeciliaSemi text-3xl h-[93vh] w-8 items-center justify-center overflow-hidden">
+            <div className="">
+              <h1 className="self-center whitespace-nowrap -rotate-90 ">Beat Up Bears®</h1>
             </div>
           </div>
         </div>
@@ -101,7 +100,7 @@ export function Navbar() {
               ) : (
                 <>
                   <Link href="/account/settings" className="hover:bg-orange-500 text-lg  block px-4 py-10 w-full text-right bg-black">
-                    <FcSettings className="absolute left-3 w-12 h-12 -mt-4 "/>
+                    <FcSettings className="absolute left-3 w-12 h-12 -mt-4 " />
                     ACCOUNT SETTINGS
                   </Link>
                   <Link href="/account" className="relative hover:bg-orange-500 px-4 py-8 w-full text-right bg-black flex items-center justify-end space-x-2">

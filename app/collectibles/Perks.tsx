@@ -52,79 +52,79 @@ export default function Perks() {
 
     return (
         <>
-            <div className='min-h-[1000px] flex flex-col justify-center bg-blackLight p-4'>
-                <div className='flex flex-col justify-center text-white text-center ml-28 space-y-6 mb-10'>
-                    <h1 className='text-4xl font-apercuBold'>Our <span className='text-orange-600'>perks & benefits</span></h1>
-                    <p className='font-apercuRegular max-w-lg mx-auto'>
-                    Brand is a promise to your customers. Culture is how you deliver it. Learn more about our values, how we work, and how hypergrowth meets impact at Beat Up Bears.
+            <div className="min-h-[1000px] flex flex-col justify-center bg-blackLight p-4">
+                <div className="flex flex-col justify-center text-white text-center ml-28 space-y-6 mb-10">
+                    <h1 className="text-4xl font-apercuBold">Our <span className="text-orange-600">perks & benefits</span></h1>
+                    <p className="font-apercuRegular max-w-lg mx-auto">
+                        Brand is a promise to your customers. Culture is how you deliver it. Learn more about our values, how we work, and how hypergrowth meets impact at Beat Up Bears.
                     </p>
                 </div>
-                <div className='container mx-auto mt-10 mr-10'>
-                    <div className='grid grid-cols-1 lg:grid-cols-[2fr_2fr] gap-3'>
-                        <div className='grid grid-cols-1 sm:grid-cols-2 gap-3'>
+                <div className="container mx-auto mt-10">
+                    <div className="grid grid-cols-1 lg:grid-cols-[2fr_2fr] gap-3 lg:ml-10">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                             <button className={`h-40 hover:bg-gray-500 bg-gray-400 rounded-xl p-4 relative font-apercuMedium ${selectedPerk === 'companion' ? 'bg-gray-500' : 'bg-gray-400'}`} onClick={() => setSelectedPerk('companion')}>
-                                <div className='h-full flex items-center justify-center relative z-10'>
-                                    <div className='absolute w-10 h-10 left-5 top-2 bg-orange-500 rounded-full -z-10'></div>
-                                    <div className='relative z-10'>
-                                        <Image src="/beartoy.png" alt="bear toy" width={50} height={50} className='mb-2' />
-                                        <p className='text-center text-lg mt-8'>Exclusive Physical Companion</p>
+                                <div className="h-full flex items-center justify-center relative z-10">
+                                    <div className="absolute w-10 h-10 left-5 top-2 bg-orange-500 rounded-full -z-10"></div>
+                                    <div className="relative z-10">
+                                        <Image src="/beartoy.png" alt="bear toy" width={50} height={50} className="mb-2" />
+                                        <p className="text-center text-lg mt-8">Exclusive Physical Companion</p>
                                     </div>
                                 </div>
                             </button>
                             <button className={`h-40 hover:bg-gray-500 bg-gray-400 rounded-xl p-4 relative font-apercuMedium ${selectedPerk === 'community' ? 'bg-gray-500' : 'bg-gray-400'}`} onClick={() => setSelectedPerk('community')}>
-                                <div className='h-full flex items-center justify-center relative z-10'>
-                                    <div className='absolute w-10 h-10 left-5 top-2 bg-orange-500 rounded-full -z-10'></div>
-                                    <div className='relative z-10'>
-                                        <Image src="/community.png" alt="community Icon " width={50} height={50} className='mb-2 -ml-10' />
-                                        <p className='text-center text-lg mt-8'>Community Access</p>
+                                <div className="h-full flex items-center justify-center relative z-10">
+                                    <div className="absolute w-10 h-10 left-5 top-2 bg-orange-500 rounded-full -z-10"></div>
+                                    <div className="relative z-10">
+                                        <Image src="/community.png" alt="community Icon " width={50} height={50} className="mb-2 -ml-10" />
+                                        <p className="text-center text-lg mt-8">Community Access</p>
                                     </div>
                                 </div>
                             </button>
                             <button className={`h-40 hover:bg-gray-500 bg-gray-400 rounded-xl p-4 relative font-apercuMedium ${selectedPerk === 'discounts' ? 'bg-gray-500' : 'bg-gray-400'}`} onClick={() => setSelectedPerk('discounts')}>
-                                <div className='h-full flex items-center justify-center relative z-10'>
-                                    <div className='absolute w-10 h-10 left-5 top-2 bg-orange-500 rounded-full -z-10'></div>
-                                    <div className='relative z-10'>
-                                        <MdOutlineDiscount className='mb-2 w-12 h-12 -ml-6' />
-                                        <p className='text-center text-lg mt-8'>Early Access & Discounts</p>
+                                <div className="h-full flex items-center justify-center relative z-10">
+                                    <div className="absolute w-10 h-10 left-5 top-2 bg-orange-500 rounded-full -z-10"></div>
+                                    <div className="relative z-10">
+                                        <MdOutlineDiscount className="mb-2 w-12 h-12 -ml-6" />
+                                        <p className="text-center text-lg mt-8">Early Access & Discounts</p>
                                     </div>
                                 </div>
                             </button>
                             <button className={`h-40 hover:bg-gray-500 bg-gray-400 rounded-xl p-4 relative font-apercuMedium ${selectedPerk === 'events' ? 'bg-gray-500' : 'bg-gray-400'}`} onClick={() => setSelectedPerk('events')}>
-                                <div className='h-full flex items-center justify-center relative z-10'>
-                                    <div className='absolute w-10 h-10 left-5 top-2 bg-orange-500 rounded-full -z-10'></div>
-                                    <div className='relative z-10'>
-                                        <GiWorld className='mb-2 w-12 h-12 -ml-12' />
-                                        <p className='text-center text-lg mt-8'>Real-world Events</p>
+                                <div className="h-full flex items-center justify-center relative z-10">
+                                    <div className="absolute w-10 h-10 left-5 top-2 bg-orange-500 rounded-full -z-10"></div>
+                                    <div className="relative z-10">
+                                        <GiWorld className="mb-2 w-12 h-12 -ml-12" />
+                                        <p className="text-center text-lg mt-8">Real-world Events</p>
                                     </div>
                                 </div>
                             </button>
                             <button className={`h-40 hover:bg-gray-500 bg-gray-400 rounded-xl p-4 relative font-apercuMedium ${selectedPerk === 'investment' ? 'bg-gray-500' : 'bg-gray-400'}`} onClick={() => setSelectedPerk('investment')}>
-                                <div className='h-full flex items-center justify-center relative z-10'>
-                                    <div className='absolute w-10 h-10 left-5 top-2 bg-orange-500 rounded-full -z-10'></div>
-                                    <div className='relative z-10'>
-                                        <Image src="/investment.png" alt="investment Icon" width={50} height={50} className='mb-2 -ml-14' />
-                                        <p className='text-center text-lg mt-8'>Investment Value</p>
+                                <div className="h-full flex items-center justify-center relative z-10">
+                                    <div className="absolute w-10 h-10 left-5 top-2 bg-orange-500 rounded-full -z-10"></div>
+                                    <div className="relative z-10">
+                                        <Image src="/investment.png" alt="investment Icon" width={50} height={50} className="mb-2 -ml-14" />
+                                        <p className="text-center text-lg mt-8">Investment Value</p>
                                     </div>
                                 </div>
                             </button>
                             <button className={`h-40 hover:bg-gray-500 bg-gray-400 rounded-xl p-4 relative font-apercuMedium ${selectedPerk === 'collectibles' ? 'bg-gray-500' : 'bg-gray-400'}`} onClick={() => setSelectedPerk('collectibles')}>
-                                <div className='h-full flex items-center justify-center relative z-10'>
-                                    <div className='absolute w-10 h-10 left-5 top-2 bg-orange-500 rounded-full -z-10'></div>
-                                    <div className='relative z-10'>
-                                        <Image src="/collectible.png" alt=" collectible Icon" width={50} height={50} className='mb-2 -ml-6' />
-                                        <p className='text-center text-lg mt-8'>Surprise Collectible Drops</p>
+                                <div className="h-full flex items-center justify-center relative z-10">
+                                    <div className="absolute w-10 h-10 left-5 top-2 bg-orange-500 rounded-full -z-10"></div>
+                                    <div className="relative z-10">
+                                        <Image src="/collectible.png" alt=" collectible Icon" width={50} height={50} className="mb-2 -ml-6" />
+                                        <p className="text-center text-lg mt-8">Surprise Collectible Drops</p>
                                     </div>
                                 </div>
                             </button>
                         </div>
-                        <div className='lg:col-span-1 bg-gray-400 rounded-xl p-4 flex flex-col font-apercuMedium'>
-                            <div className='flex flex-row justify-center space-x-5'>
-                                <Image src={perks[selectedPerk].image1} alt="3280 bub" width={200} height={200} style={{width:'auto', height: "auto" }} className='rounded-xl object-cover' />
-                                <Image src={perks[selectedPerk].image2} alt="7428 bub" width={150} height={150} style={{width:'auto', height: "auto" }} className='rounded-xl object-cover ' />
+                        <div className="lg:col-span-1 w-full bg-gray-400 rounded-xl p-4 flex flex-col font-apercuMedium">
+                            <div className="flex flex-row justify-center space-x-5">
+                                <Image src={perks[selectedPerk].image1} alt="3280 bub" width={200} height={200} style={{width:'auto', height: "auto" }} className="rounded-xl object-cover" />
+                                <Image src={perks[selectedPerk].image2} alt="7428 bub" width={150} height={150} style={{width:'auto', height: "auto" }} className="rounded-xl object-cover " />
                             </div>
-                            <div className='p-4'>
-                                <h2 className='text-xl font-semibold mb-2'>{perks[selectedPerk].title}</h2>
-                                <p className='text-sm'>{perks[selectedPerk].description}</p>
+                            <div className="p-4">
+                                <h2 className="text-xl font-semibold mb-2">{perks[selectedPerk].title}</h2>
+                                <p className="text-sm">{perks[selectedPerk].description}</p>
                             </div>
                         </div>
                     </div>

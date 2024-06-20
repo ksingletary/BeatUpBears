@@ -24,8 +24,10 @@ const config: Config = {
       container : {
         center: true,
         padding: {
-          DEFAULT: "1rem",
+          DEFAULT: "2rem",
           sm: "3rem",
+          md:"4rem",
+          lg: '5rem'
         }
       },
       fontFamily:{

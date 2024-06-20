@@ -41,7 +41,7 @@ export default function CreateAccount() {
 
   return (
     <>  
-        <div className="min-h-[650px] flex">
+        <div className="flex lg:min-h-[93vh]">
             <div className="w-1/3 bg-blackDark">
                 <div className="relative flex flex-col justify-center gap-6 text-white ml-10 mt-24">
                     <h1 className="text-3xl font-apercuBold ml-32">CREATE ACCOUNT</h1>
@@ -154,7 +154,7 @@ export default function CreateAccount() {
                     </div>
                     {/*  Image section */}
                     <div className="flex justify-center items-center relative z-0">
-                        <div className="relative w-[650px] h-[650px]">
+                        <div className="relative w-[80vh] h-[80vh]">
                             <Image
                             src={status === "authenticated" ? "/3536.png" : "/1205.png"}
                             fill
